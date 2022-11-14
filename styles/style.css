@@ -9,18 +9,14 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* выше установили ограничения для секции */
   position:relative;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
   background-color: #f2f2f2;
-  overflow: hidden;
-  
+  overflow: hidden; 
 }
-
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
   width: 568px;
@@ -28,14 +24,6 @@
   position: absolute;
   top: 64px;
   right: 0;
-}
-
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
 }
 .logo{
   background: url('../images/logo_place_header.svg');
@@ -119,6 +107,8 @@
   margin:0 auto;
   text-align: center;
   width: 60%;
+  margin-top:100px;
+  margin-bottom: 20px;
 }
 .section-subtitle{
   font-size: 24px;
@@ -126,6 +116,7 @@
   font-weight: normal;
   text-align: center;
   margin-top: 20px;
+  margin-bottom: 0;
 }
 .table{
   list-style: none;
@@ -136,16 +127,18 @@
   margin-top: 60px;
   margin: 0 auto;
   margin-bottom: 100px;
+  padding: 0;
 }
 .table__cell{
   width: 250px;
+  margin-top: 60px;
 }
 .table__heading{
   font-size: 24px;
   line-height: 1.15;
   font-weight: 600;
   margin-bottom: 20px;
-
+  margin-top: 0;
 }
 .table__text{
   font-size: 18px;
@@ -170,7 +163,7 @@
   margin: 0 auto;
   width: 648px;
   padding-top: 100px;
-  margin-bottom: 70px;
+  padding-bottom: 70px;
   z-index: 1;
 }
 .feynman__subtitle{
@@ -208,6 +201,7 @@
 .section-title_theme_dark{
   color:#ffffff;
   padding-top: 90px;
+  margin: 0 auto;
 }
 .section-subtitle_theme_dark{
   color:#ffffff;
@@ -221,7 +215,9 @@
 }
 .table__cell_theme_dark{
   width: 200px;
-  gap: 80px;
+  color: white;
+  margin: 0 ;
+  padding-top: 80px;
 }
 .kaufman__triangle{
 background-image: url('../images/kaufman-triangle.svg');
@@ -242,7 +238,7 @@ height: 877px;
   min-height: 350px;
   position: relative;
   padding-top: 60px;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
   color: white;
 }
 .footer__columns_content_copyright{
@@ -259,7 +255,7 @@ background: url('../images/logo_place_footer.svg');
   bottom: 18px;
   left: 0;
 }
-.footer__column{
+.footer__columns-info{
   display: flex;
   flex-basis: 711px;
   justify-content: space-between;
@@ -270,13 +266,17 @@ background: url('../images/logo_place_footer.svg');
   line-height: 30px;
   font-weight: 600;
   margin-top: 0;
+  margin-bottom: 20px;
 }
+
 .footer__column-links{
   font-size: 18px;
   line-height: 30px;
   font-weight: normal;
   list-style: none;
   padding-left: 0;
+  margin-bottom: 16px;
+  margin-top: 0;
 }
 .footer__column-link{
 text-decoration: none;
@@ -287,3 +287,7 @@ color: white;
   height: 16px;
   padding-right: 10px;
 }
+.footer__column_content_info{
+  margin: 0 auto;
+}
+
